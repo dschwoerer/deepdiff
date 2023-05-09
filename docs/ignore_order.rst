@@ -5,14 +5,14 @@
 Ignore Order
 ============
 
-DeepDiff by default compares objects in the order that it iterates through them in iterables.
+DeepDiff by default compares some type of objects in the order that it iterates through them in iterables.
 In other words if you have 2 lists, then the first item of the lists are compared to each other, then the 2nd items and so on.
 That makes DeepDiff be able to run in linear time.
 
 However, There are often times when you don't care about the order in which the items have appeared.
 In such cases DeepDiff needs to do way more work in order to find the differences.
 
-There are a couple of parameters provided to you to have full control over.
+There are a couple of parameters provided to you to have control over.
 
 
 List difference with ignore_order=False which is the default:
